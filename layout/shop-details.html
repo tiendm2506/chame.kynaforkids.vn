@@ -42,6 +42,42 @@
                         <li>
                             <a class="active-btn" href="#"><img class="d-lg-none" src="../images/log-in.svg" alt="">Kích hoạt COD</a>
                         </li>
+                        <li class="cart d-none d-lg-inline-block">
+                            <span class="icon">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="amount">1</span>
+                            </span>
+                            <span class="text">Giỏ hàng</span>
+                            <div class="cart-content">
+                                <ul>
+                                    <li>
+                                        <div class="name">
+                                            <img src="../images/ic-delete.svg" alt="">
+                                            <span>Cha mẹ chơi, con thưởng thành</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>Học 1 tháng</span>
+                                            <b>9.000đ</b>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">
+                                            <img src="../images/ic-delete.svg" alt="">
+                                            <span>Cha mẹ chơi, con thưởng thành</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>Học 1 tháng</span>
+                                            <b>9.000đ</b>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="total-price">
+                                    <span>Tổng cộng:</span>
+                                    <b>18.000đ</b>
+                                </div>
+                                <a class="btn-checkout" href="#">Thanh toán ngay</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -54,10 +90,14 @@
                 <div class="breadcrumb-line">
                     <a href="/">Trang chủ</a>
                     <span class="icon">»</span>
+                    <a href="/">Giai đoạn mang thai</a>
+                    <a class="d-none" href="/">Combo</a>
+                    <span class="icon">»</span>
                     <b>Bé giỏi Toán cùng Fingermath & Soroban</b>
                 </div>
                 <div class="name d-none d-lg-flex">
-                    <div class="tag">Ứng dụng</div>
+                    <div class="tag" style="background-color: #1cd1ff;">Khoá học lẻ</div>
+                    <div class="tag d-none" style="background-color: #7ed321;">Combo</div>
                     <div class="stars">
                         <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -70,6 +110,10 @@
 
                 </div>
                 <h1 class="d-none d-lg-block">Bé giỏi Toán cùng Fingermath & Soroban</h1>
+                <div class="d-none d-lg-block">
+                    <div>Công ty cổ phần đào tạo Tâm Trí Lực</div>
+                    <div class="d-none">Gồm 7 khoá học</div>
+                </div>
             </div>
         </section>
         <section id="video">
@@ -89,6 +133,9 @@
                                 </a>
                                 <div class="show-video"></div>
                             </div>
+                            <div class="thumb-course d-none">
+                                <img class="img-fluid w-100" src="../images/img-slider-2.png" alt="">
+                            </div>
                             <div class="description d-lg-none">
                                 <div class="stars">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -100,14 +147,15 @@
                                 <span class="author">Early Start</span>
                                 <span style="color: #333333;"><b>1.502</b> người đã mua</span>
                                 <h1>Kể chuyện tương tác - VNMonkey</h1>
-
+                                <div class="d-lg-none" style="color: #888888;">Trung tâm huấn luyện kỹ năng</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-5">
                         <div class="box-buy-course">
                             <div class="tag d-none d-lg-block">
-                                <span class="text">Ứng dụng</span>
+                                <span class="text" style="background-color: #1cd1ff;">Khoá học lẻ</span>
+                                <span class="text d-none" style="background-color: #7ed321;">Combo</span>
                                 <span class="amount-buy"><b>1.502</b> người đã mua</span>
                             </div>
                             <h3 class="d-none d-lg-block">Bé giỏi Toán cùng Fingermath & Soroban</h3>
@@ -156,35 +204,6 @@
             </div>
         </section>
         <section class="d-lg-none" id="just-mobile">
-            <ul class="d-none">
-                <li class="is-selected">
-                    <div>
-                        <label for="one-month">Học 1 tháng</label>
-                    </div>
-                    <div class="price">
-                        <div class="origin-price">8.000đ</div>
-                        <div class="promotion-price">8.000đ</div>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <label for="one-year">Học 1 năm</label>
-                    </div>
-                    <div class="price">
-                        <div class="origin-price">8.000đ</div>
-                        <div class="promotion-price">8.000đ</div>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <label for="six-month">Học 6 tháng</label>
-                    </div>
-                    <div class="price">
-                        <div class="origin-price">8.000đ</div>
-                        <div class="promotion-price">8.000đ</div>
-                    </div>
-                </li>
-            </ul>
             <form class="form">
                 <ul>
                     <li class="is-selected">
@@ -218,38 +237,17 @@
                         </div>
                     </li>
                 </ul>
+                <button class="btn-add-to-cart">Thêm vào giỏ hàng</button>
             </form>
-        </section>
-        <section id="slider-images">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-xl-7">
-                        <h4>Hình ảnh ứng dụng</h4>
-                        <div class="slider-large-images">
-                            <div class="item"><img class="img-fluid" src="../images/slider-1.png" alt=""></div>
-                            <div class="item"><img class="img-fluid" src="../images/slider-2.png" alt=""></div>
-                            <div class="item"><img class="img-fluid" src="../images/slider-3.png" alt=""></div>
-                            <div class="item"><img class="img-fluid" src="../images/slider-4.png" alt=""></div>
-                            <div class="item"><img class="img-fluid" src="../images/slider-5.png" alt=""></div>
-                        </div>
-                        <div class="slider-small-images">
-                            <div class="item"><img class="img-fluid" src="../images/slider-1.png" alt=""></div>
-                            <div class="item"><img class="img-fluid" src="../images/slider-2.png" alt=""></div>
-                            <div class="item"><img class="img-fluid" src="../images/slider-3.png" alt=""></div>
-                            <div class="item"><img class="img-fluid" src="../images/slider-4.png" alt=""></div>
-                            <div class="item"><img class="img-fluid" src="../images/slider-5.png" alt=""></div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </section>
 
         <section id="intro">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-xl-7">
-                        <h4>Giới thiệu ứng dụng</h4>
+                        <h4>Giới thiệu khóa học</h4>
+                        <h4 class="d-none">Giới thiệu combo</h4>
                         <div class="devices">
                             <p>
                                 Ứng dụng có thể cài đặt, sử dụng trên: <br>
@@ -271,29 +269,284 @@
                                 Làm sao để con tự giác và tự lập trong các sinh hoạt và học tập hằng ngày
                                 Với Dạy con tự lập cùng mẹ Xu Sim của Nhà báo, Nhà giáo dục Trần Thu Hà, bạn sẽ nắm vững phương pháp giúp con tự lập.
                             </p>
-                            <div class="text-center"><a href="javascript:">Xem thêm</a></div>
+                        </div>
+                        <div class="text-center"><a href="javascript:" id="load-more" class="d-none">Xem thêm</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="content-course">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="single-course d-none">
+                            <h4>Nội dung khoá học</h4>
+                            <ul class="list-lesson">
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>1. Giới thiệu khóa học</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>2. Vì sao nên dạy con tự lập?</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>3. Hãy cam đảm khi dạy con tự lập</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>4. Những khó khăn khi dạy con tự lập</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>5a. Giúp con tự lập trong việc học (P1)</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>5b. Giúp con tự lập trong việc học (P2)</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>6. Giúp con tự lập trong việc tự đưa ra quyết định</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>7. Những thử thách cần vượt qua khi dạy con tự lập</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>8. Để dạy con tự lập hiệu quả (P1)</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>9. Để dạy con tự lập hiệu quả (P2)</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>1. Giới thiệu khóa học</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>2. Vì sao nên dạy con tự lập?</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>3. Hãy cam đảm khi dạy con tự lập</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>4. Những khó khăn khi dạy con tự lập</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>5a. Giúp con tự lập trong việc học (P1)</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>5b. Giúp con tự lập trong việc học (P2)</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>6. Giúp con tự lập trong việc tự đưa ra quyết định</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>7. Những thử thách cần vượt qua khi dạy con tự lập</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>8. Để dạy con tự lập hiệu quả (P1)</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    <span>9. Để dạy con tự lập hiệu quả (P2)</span>
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="javascript:" id="load-more-content-course" class="d-none">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="combo-course">
+                            <h4>Chi tiết combo</h4>
+                            <ul class="list-combo">
+                                <li>
+                                    <div class="name-teacher">
+                                        <div class="name-course">
+                                            <span>1</span>
+                                            <p>HỌC TOÁN THEO PHƯƠNG PHÁP FINGERMATH 1</p>
+                                        </div>
+                                        <div class="teacher">Giảng viên: <b>Học Viện Bé Thông Minh</b></div>
+                                    </div>
+                                    <div class="text-right">
+                                        <a class="control-btn" href="javascript:">
+                                            <span class="hide-content">Rút gọn</span>
+                                            <span class="show-content">Xem chi tiết</span>
+                                            <i class="fa fa-chevron-down"></i>
+                                        </a>
+                                    </div>
+                                    <div class="wrapper-content">
+                                        <ul class="general-info">
+                                            <li>
+                                                <img src="../images/time.svg" alt="">
+                                                <span>Thời lượng: 4 giờ</span>
+                                            </li>
+                                            <li>
+                                                <img src="../images/open-book.svg" alt="">
+                                                <span>Bài học: 28 bài</span>
+                                            </li>
+                                            <li>
+                                                <img src="../images/price-tag.svg" alt="">
+                                                <span>Giá gốc: 300.000 ₫</span>
+                                            </li>
+                                        </ul>
+                                        <div class="content-text">
+                                            <p>Có một thực tế mà ai trong chúng ta cũng đều nhìn thấy đó là những người có tư duy Toán học tốt thì họ có thể làm bất cứ ngành nghề gì mà họ yêu thích và họ đều trở thành những người thành công trong lĩnh vực đã lựa chọn. Đó là một trong những lợi ích của việc học môn Toán. Cho trẻ làm quen với môn toán và rèn luyện tư duy toán học từ nhỏ chính là một cách rất hiệu quả để các em có được nền tảng tư duy tốt về sau. Từ đó, các em sẽ có đủ khả năng để xử lý những vấn đề, tình huống phức tạp trong những lĩnh vực chuyên môn khác nhau.</p>
+                                            <p>
+                                                Tuy nhiên, đối mặt với việc dạy con học toán, phần lớn các cha mẹ đều có nhiều băn khoăn
+                                                Làm sao để bé hào hứng hơn khi học toán?
+                                                Trẻ học mãi mà vẫn không nhớ được các phép toán đơn giản thì phải làm sao?
+                                                Cách học toán hiệu quả nhất cho trẻ nhỏ là gì?
+                                                Câu trả lời nằm trong khóa học "Học toán theo phương pháp FingerMath 1" do Kyna.vn biên tập và sản xuất. Khóa học được chia thành 3 phần với độ khó của kiến thức tăng dần đều, xen kẽ nhiều ví dụ và bài tập minh họa thực tiễn cho bé.
+                                            </p>
+                                            <p>
+                                                Vậy bé sẽ tìm hiểu những gì trong giờ học toán FingerMath phần 1?
+                                                Làm quen với các con số từ 0 – 99
+                                                Học đếm số nhanh chóng và chính xác chỉ với đôi bàn tay.
+                                                Thực hiện nhiều phép tính cộng – trừ liên tiếp tới 2 chữ số chỉ sau một vài buổi học đầu tiên.
+                                                Nội dung khóa học được xây dựng dựa trên phương pháp ngón tay FingerMath của Hàn Quốc. Phương pháp này sẽ giúp trẻ phối hợp nhịp nhàng giữa các hoạt động cơ thể với tư duy. Hơn nữa việc chỉ sử dụng đôi bàn tay để tính toán mà không cần dùng tới bất cứ dụng cụ tính toán nào sẽ giúp bé thuận tiện hơn trong việc luyện tập ở mọi lúc mọi nơi, trẻ sẽ cảm thấy việc học như một trò chơi thú vị, bổ ích và môn Toán sẽ không còn khô khan và nhàm chán.
+                                            </p>
+                                            <p>Hãy cùng Kyna.vn khám phá ngay cách học toán hiệu quả và tối ưu cho con các cha mẹ nhé!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="name-teacher">
+                                        <div class="name-course">
+                                            <span>2</span>
+                                            <p>HỌC TOÁN THEO PHƯƠNG PHÁP FINGERMATH 1</p>
+                                        </div>
+                                        <div class="teacher">Giảng viên: <b>Học Viện Bé Thông Minh</b></div>
+                                    </div>
+                                    <div class="text-right">
+                                        <a class="control-btn" href="javascript:">
+                                            <span class="hide-content">Rút gọn</span>
+                                            <span class="show-content">Xem chi tiết</span>
+                                            <i class="fa fa-chevron-down"></i>
+                                        </a>
+                                    </div>
+                                    <div class="wrapper-content">
+                                        <ul class="general-info">
+                                            <li>
+                                                <img src="../images/time.svg" alt="">
+                                                <span>Thời lượng: 4 giờ</span>
+                                            </li>
+                                            <li>
+                                                <img src="../images/open-book.svg" alt="">
+                                                <span>Bài học: 28 bài</span>
+                                            </li>
+                                            <li>
+                                                <img src="../images/price-tag.svg" alt="">
+                                                <span>Giá gốc: 300.000 ₫</span>
+                                            </li>
+                                        </ul>
+                                        <div class="content-text">
+                                            <p>Có một thực tế mà ai trong chúng ta cũng đều nhìn thấy đó là những người có tư duy Toán học tốt thì họ có thể làm bất cứ ngành nghề gì mà họ yêu thích và họ đều trở thành những người thành công trong lĩnh vực đã lựa chọn. Đó là một trong những lợi ích của việc học môn Toán. Cho trẻ làm quen với môn toán và rèn luyện tư duy toán học từ nhỏ chính là một cách rất hiệu quả để các em có được nền tảng tư duy tốt về sau. Từ đó, các em sẽ có đủ khả năng để xử lý những vấn đề, tình huống phức tạp trong những lĩnh vực chuyên môn khác nhau.</p>
+                                            <p>
+                                                Tuy nhiên, đối mặt với việc dạy con học toán, phần lớn các cha mẹ đều có nhiều băn khoăn
+                                                Làm sao để bé hào hứng hơn khi học toán?
+                                                Trẻ học mãi mà vẫn không nhớ được các phép toán đơn giản thì phải làm sao?
+                                                Cách học toán hiệu quả nhất cho trẻ nhỏ là gì?
+                                                Câu trả lời nằm trong khóa học "Học toán theo phương pháp FingerMath 1" do Kyna.vn biên tập và sản xuất. Khóa học được chia thành 3 phần với độ khó của kiến thức tăng dần đều, xen kẽ nhiều ví dụ và bài tập minh họa thực tiễn cho bé.
+                                            </p>
+                                            <p>
+                                                Vậy bé sẽ tìm hiểu những gì trong giờ học toán FingerMath phần 1?
+                                                Làm quen với các con số từ 0 – 99
+                                                Học đếm số nhanh chóng và chính xác chỉ với đôi bàn tay.
+                                                Thực hiện nhiều phép tính cộng – trừ liên tiếp tới 2 chữ số chỉ sau một vài buổi học đầu tiên.
+                                                Nội dung khóa học được xây dựng dựa trên phương pháp ngón tay FingerMath của Hàn Quốc. Phương pháp này sẽ giúp trẻ phối hợp nhịp nhàng giữa các hoạt động cơ thể với tư duy. Hơn nữa việc chỉ sử dụng đôi bàn tay để tính toán mà không cần dùng tới bất cứ dụng cụ tính toán nào sẽ giúp bé thuận tiện hơn trong việc luyện tập ở mọi lúc mọi nơi, trẻ sẽ cảm thấy việc học như một trò chơi thú vị, bổ ích và môn Toán sẽ không còn khô khan và nhàm chán.
+                                            </p>
+                                            <p>Hãy cùng Kyna.vn khám phá ngay cách học toán hiệu quả và tối ưu cho con các cha mẹ nhé!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="name-teacher">
+                                        <div class="name-course">
+                                            <span>3</span>
+                                            <p>HỌC TOÁN THEO PHƯƠNG PHÁP FINGERMATH 1</p>
+                                        </div>
+                                        <div class="teacher">Giảng viên: <b>Học Viện Bé Thông Minh</b></div>
+                                    </div>
+                                    <div class="text-right">
+                                        <a class="control-btn" href="javascript:">
+                                            <span class="hide-content">Rút gọn</span>
+                                            <span class="show-content">Xem chi tiết</span>
+                                            <i class="fa fa-chevron-down"></i>
+                                        </a>
+                                    </div>
+                                    <div class="wrapper-content">
+                                        <ul class="general-info">
+                                            <li>
+                                                <img src="../images/time.svg" alt="">
+                                                <span>Thời lượng: 4 giờ</span>
+                                            </li>
+                                            <li>
+                                                <img src="../images/open-book.svg" alt="">
+                                                <span>Bài học: 28 bài</span>
+                                            </li>
+                                            <li>
+                                                <img src="../images/price-tag.svg" alt="">
+                                                <span>Giá gốc: 300.000 ₫</span>
+                                            </li>
+                                        </ul>
+                                        <div class="content-text">
+                                            <p>Có một thực tế mà ai trong chúng ta cũng đều nhìn thấy đó là những người có tư duy Toán học tốt thì họ có thể làm bất cứ ngành nghề gì mà họ yêu thích và họ đều trở thành những người thành công trong lĩnh vực đã lựa chọn. Đó là một trong những lợi ích của việc học môn Toán. Cho trẻ làm quen với môn toán và rèn luyện tư duy toán học từ nhỏ chính là một cách rất hiệu quả để các em có được nền tảng tư duy tốt về sau. Từ đó, các em sẽ có đủ khả năng để xử lý những vấn đề, tình huống phức tạp trong những lĩnh vực chuyên môn khác nhau.</p>
+                                            <p>
+                                                Tuy nhiên, đối mặt với việc dạy con học toán, phần lớn các cha mẹ đều có nhiều băn khoăn
+                                                Làm sao để bé hào hứng hơn khi học toán?
+                                                Trẻ học mãi mà vẫn không nhớ được các phép toán đơn giản thì phải làm sao?
+                                                Cách học toán hiệu quả nhất cho trẻ nhỏ là gì?
+                                                Câu trả lời nằm trong khóa học "Học toán theo phương pháp FingerMath 1" do Kyna.vn biên tập và sản xuất. Khóa học được chia thành 3 phần với độ khó của kiến thức tăng dần đều, xen kẽ nhiều ví dụ và bài tập minh họa thực tiễn cho bé.
+                                            </p>
+                                            <p>
+                                                Vậy bé sẽ tìm hiểu những gì trong giờ học toán FingerMath phần 1?
+                                                Làm quen với các con số từ 0 – 99
+                                                Học đếm số nhanh chóng và chính xác chỉ với đôi bàn tay.
+                                                Thực hiện nhiều phép tính cộng – trừ liên tiếp tới 2 chữ số chỉ sau một vài buổi học đầu tiên.
+                                                Nội dung khóa học được xây dựng dựa trên phương pháp ngón tay FingerMath của Hàn Quốc. Phương pháp này sẽ giúp trẻ phối hợp nhịp nhàng giữa các hoạt động cơ thể với tư duy. Hơn nữa việc chỉ sử dụng đôi bàn tay để tính toán mà không cần dùng tới bất cứ dụng cụ tính toán nào sẽ giúp bé thuận tiện hơn trong việc luyện tập ở mọi lúc mọi nơi, trẻ sẽ cảm thấy việc học như một trò chơi thú vị, bổ ích và môn Toán sẽ không còn khô khan và nhàm chán.
+                                            </p>
+                                            <p>Hãy cùng Kyna.vn khám phá ngay cách học toán hiệu quả và tối ưu cho con các cha mẹ nhé!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+
+
+
+
             </div>
         </section>
         <section id="info-teacher">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-xl-7">
-                        <h4>Đơn vị cung cấp Ứng dụng</h4>
+                        <h4>Thông tin giảng viên</h4>
                         <div class="wrapper">
                             <div class="img"><img src="../images/avatar.png" alt=""></div>
-                            <span>Early Stars</span>
+                            <span>Trần Thu Hà</span>
                         </div>
                         <div class="wrapper-des">
-                            <p>Monkey Junior là ứng dụng học tập sáng tạo giành cho trẻ em được công nhận hiệu quả trên toàn thế giới:</p>
-                            <p>Giải Nhất cuộc thi Sáng Kiến Toàn Cầu tại Silicon Valley do tổng thống Mỹ Barack Obama chủ trì với hơn 1000 đội đến từ hơn 100 quốc gia khác nhau.</p>
-                            <p>Giải Nhất về thiết kế tại cuộc thi Khởi Nghiệp Châu Á - AEA tại Tokyo 2016. Được sự tin tưởng của trên 1 triệu bố mẹ trên toàn thế giới.</p>
-                            <p>Top 1 chương trình học đọc trên App Store và Google Play.</p>
-                            <p>Top 1 ứng dụng giáo dục cho trẻ em được tải nhiều nhất ở Việt Nam và Top 20 ở Mỹ.</p>
+                            <p>Chị Thu Hà là một nhà báo hiện đang sống và làm việc ở TP HCM, đồng thời là tác giả một số cuốn sách đang thu hút nhiều hưởng ứng tích cực từ độc giả:</p>
+                            <p>- Con nghĩ đi, mẹ không biết</p>
+                            <p> - Buông tay để con bay</p>
+                            <p>- Ai cũng xứng đáng được hạnh phúc</p>
+                            <p>Chị là mẹ của hai cô con gái vô cùng đáng yêu, cá tính là Xu và Sim. Tự nhận mình là một người mẹ không hoàn hảo và mắc nhiều sai lầm khi nuôi dạy con, nhưng chị coi đó là những bài học lớn của mình để thay đổi và trở thành một người bạn đồng hành thực sự cùng con lớn lên.</p>
                         </div>
-                        <div class="text-center d-lg-none"><a href="javascript:">Xem thêm</a></div>
+                        <div class="text-center d-lg-none"><a href="javascript:" id="load-more-teacher" class="d-none">Xem thêm</a></div>
                     </div>
                 </div>
             </div>
@@ -302,7 +555,7 @@
             <div class="container">
                 <h4>Đánh giá của học viên <span style="font-weight: 400;" class="d-lg-none">(25 lượt)</span></h4>
                 <div class="row">
-                    <div class="col-lg-6 col-xl-7">
+                    <div class="col-lg-6 col-xl-7 order-last order-lg-first">
                         <div class="right">
                             <h5>Đánh giá (12)</h5>
                             <ul class="list-comments">
@@ -415,7 +668,7 @@
         </section>
         <section id="relevant-app">
             <div class="container">
-                <h4>Ứng dụng liên quan</h4>
+                <h4>Khoá học liên quan</h4>
                 <div class="row course-row">
                     <div class="col-sm-6 col-lg-4">
                         <div class="course-item">
@@ -426,7 +679,7 @@
                                 </div>
                                 <div class="wrapper-mb-style">
                                     <div class="tag-rating">
-                                        <span class="tag">Ứng dụng</span>
+                                        <span class="tag">Khoá học lẻ</span>
                                         <div class="rating">
                                             <div class="stars">
                                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -464,7 +717,7 @@
                                 </div>
                                 <div class="wrapper-mb-style">
                                     <div class="tag-rating">
-                                        <span class="tag">Ứng dụng</span>
+                                        <span class="tag">Combo</span>
                                         <div class="rating">
                                             <div class="stars">
                                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -481,7 +734,7 @@
                             </div>
                             <div class="info">
                                 <h3 class="d-none d-lg-block">Cha mẹ chơi, con thành tài</h3>
-                                <p><b>Trung tâm huấn luyện kỹ năng,</b> Công ty cổ phần đào tạo Tâm Trí Lực </p>
+                                <p>Gồm <b>7</b> khoá học</p>
                                 <div class="price d-none d-lg-flex">
                                     <span class="promotion-price">Từ <b>200.000đ</b></span>
                                     <span class="origin-price">500.000đ</span>
@@ -502,7 +755,7 @@
                                 </div>
                                 <div class="wrapper-mb-style">
                                     <div class="tag-rating">
-                                        <span class="tag">Ứng dụng</span>
+                                        <span class="tag">Combo</span>
                                         <div class="rating">
                                             <div class="stars">
                                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -519,7 +772,7 @@
                             </div>
                             <div class="info">
                                 <h3 class="d-none d-lg-block">Cha mẹ chơi, con thành tài</h3>
-                                <p><b>Trung tâm huấn luyện kỹ năng,</b> Công ty cổ phần đào tạo Tâm Trí Lực </p>
+                                <p>Gồm <b>7</b> khoá học</p>
                                 <div class="price d-none d-lg-flex">
                                     <span class="promotion-price">Từ <b>200.000đ</b></span>
                                     <span class="origin-price">500.000đ</span>
@@ -544,41 +797,6 @@
     <script src="../js/slick.min.js"></script>
     <script src="../js/main.js"></script>
     <script>
-        $('.slider-large-images').slick({
-            slidesToShow : 1,
-            mobileFirst : true,
-            arrows : false,
-            prevArrow:`<button type='button' class='slick-prev'><img src='../images/arrow-left.png' alt=''></button>`,
-            nextArrow:`<button type='button' class='slick-next'><img src='../images/arrow-right.png' alt=''></button>`,
-            responsive : [
-                {
-                    breakpoint: 992,
-                    settings :{
-                        arrows : true
-                    }
-                }
-            ]
-
-        });
-        $('.slider-small-images').slick({
-            slidesToShow: 2,
-            centerMode: true,
-            centerPadding: '40px',
-            mobileFirst : true,
-            prevArrow:`<button type='button' class='slick-prev'><i class="fa fa-chevron-left" aria-hidden="true"></i></button>`,
-            nextArrow:`<button type='button' class='slick-next'><i class="fa fa-chevron-right" aria-hidden="true"></i></button>`,
-            responsive : [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow : 4,
-                        centerMode: false
-                    }
-                }
-            ]
-        });
-    </script>
-    <script>
         $('input[type="radio"]').on('click change', function() {
             if ($('input[name=time]:checked').length > 0) {
                 $('#shop-details-page #video .box-buy-course .form ul li').removeClass('is-selected');
@@ -588,7 +806,7 @@
     </script>
     <script>
         $(window).scroll(function(){
-            let pos_slider_images = $('#slider-images').offset().top;
+            let pos_slider_images = $('#intro').offset().top;
             let pos_body = window.pageYOffset;
             let h_form = $('.box-buy-course').outerHeight();
             let pos_comment = $('#comment').offset().top;
@@ -600,21 +818,6 @@
         })
     </script>
     <script>
-        $('.slider-small-images .slick-slide img').on('click', function(){
-           let srcImage = $(this).attr('src');
-           console.log(srcImage);
-           $('.slider-large-images .slick-slide.slick-active img').attr('src', srcImage);
-        });
-    </script>
-    <script>
-        $('.slider-large-images .slick-next').on('click', function(){
-            $('.slider-small-images .slick-next').trigger('click');
-        })
-        $('.slider-large-images .slick-prev').on('click', function(){
-            $('.slider-small-images .slick-prev').trigger('click');
-        })
-    </script>
-    <script>
         if (window.matchMedia('(max-width: 991px)').matches){
             $('.control-show-list-package').on('click', function(){
                 $(this).toggleClass('is-showed');
@@ -623,9 +826,48 @@
         }
     </script>
     <script>
-        $('#relevant-app .col-sm-6').slick({
-            slidesToShow: 1,
-        });
+        if (window.matchMedia('(max-width: 767px)').matches){
+            $('#relevant-app .col-sm-6').slick({
+                slidesToShow: 1,
+            });
+        }
+    </script>
+
+    <script>
+        // Load more text description
+        let h_description = $('#shop-details-page #intro .description').outerHeight();
+        let h_des_teacher = $('#shop-details-page #info-teacher .wrapper-des').outerHeight();
+        let h_content_course = $('#shop-details-page #content-course ul').outerHeight();
+        if(h_description > 300){
+            $('#shop-details-page #intro .description').addClass('need-limit');
+            $('#load-more').removeClass('d-none');
+            $('#load-more').on('click', function(){
+                $('#shop-details-page #intro .description').removeClass('need-limit');
+                $('#load-more').addClass('d-none');
+            })
+        }
+        if(h_des_teacher > 300){
+            $('#shop-details-page #info-teacher .wrapper-des').addClass('need-limit');
+            $('#load-more-teacher').removeClass('d-none');
+            $('#load-more-teacher').on('click', function(){
+                $('#shop-details-page #info-teacher .wrapper-des').removeClass('need-limit');
+                $('#load-more-teacher').addClass('d-none');
+            })
+        }
+        if(h_content_course > 250){
+            $('#shop-details-page #content-course .list-lesson').addClass('need-limit');
+            $('#load-more-content-course').removeClass('d-none');
+            $('#load-more-content-course').on('click', function(){
+                $('#shop-details-page #content-course .list-lesson').removeClass('need-limit');
+                $('#load-more-content-course').addClass('d-none');
+            })
+        }
+    </script>
+    <script>
+        $('#shop-details-page #content-course .combo-course ul.list-combo > li .control-btn').on('click', function(){
+            $(this).parent().parent().find('.wrapper-content').slideToggle();
+            $(this).toggleClass('is-showed');
+        })
     </script>
 
 
