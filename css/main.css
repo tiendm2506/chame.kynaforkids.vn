@@ -31,6 +31,26 @@
         display: none !important; }
   #header.is-show-menu .menu {
     right: 0 !important; }
+  #header .cart-mb {
+    position: relative;
+    margin-right: 20px;
+    top: -3px; }
+    #header .cart-mb i {
+      color: #1cd1ff;
+      font-size: 25px; }
+    #header .cart-mb .amount {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #ffffff;
+      background-color: #ff3f7c;
+      position: absolute;
+      top: -5px;
+      right: -6px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%; }
   @media (min-width: 768px) {
     #header .wrapper {
       display: flex;
@@ -63,26 +83,110 @@
         width: initial;
         box-shadow: none;
         padding: 0; } }
-    #header .wrapper .menu ul li {
+    #header .wrapper .menu > ul > li {
       margin-bottom: 20px; }
       @media (min-width: 768px) {
-        #header .wrapper .menu ul li {
+        #header .wrapper .menu > ul > li {
           display: inline-block;
           margin: 0 5px;
           padding: 0 !important;
           border: none !important; } }
       @media (min-width: 992px) {
-        #header .wrapper .menu ul li {
+        #header .wrapper .menu > ul > li {
           margin: 0 0 0 20px; } }
-      #header .wrapper .menu ul li:first-child {
+      #header .wrapper .menu > ul > li:first-child {
         border-bottom: 1px solid #dddddd;
         padding-bottom: 20px; }
-      #header .wrapper .menu ul li a {
+      #header .wrapper .menu > ul > li.cart {
+        font-weight: 700;
+        font-size: 18px;
+        color: #1cd1ff;
+        margin-left: 40px;
+        cursor: pointer;
+        position: relative; }
+        #header .wrapper .menu > ul > li.cart .icon {
+          position: relative;
+          display: inline-block; }
+          #header .wrapper .menu > ul > li.cart .icon i {
+            font-size: 25px;
+            margin-right: 10px; }
+          #header .wrapper .menu > ul > li.cart .icon .amount {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ff3f7c;
+            color: #ffffff;
+            border-radius: 50%;
+            font-size: 12px;
+            top: -4px;
+            right: 4px; }
+        @media (min-width: 992px) {
+          #header .wrapper .menu > ul > li.cart .cart-content {
+            width: 315px;
+            border-radius: 20px;
+            position: absolute;
+            top: 70px;
+            right: 0;
+            background-color: #ffffff;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .5s ease; }
+            #header .wrapper .menu > ul > li.cart .cart-content.is-showed {
+              opacity: 1;
+              visibility: visible; }
+            #header .wrapper .menu > ul > li.cart .cart-content:after {
+              width: 0px;
+              height: 0px;
+              border-left: 7px solid transparent;
+              border-right: 8px solid transparent;
+              border-bottom: 12px solid #ffffff;
+              content: '';
+              display: block;
+              position: absolute;
+              right: 45px;
+              top: -11px; }
+            #header .wrapper .menu > ul > li.cart .cart-content ul li {
+              font-weight: 400;
+              color: #666666;
+              width: 100%;
+              border-bottom: 1px solid #666666;
+              padding-bottom: 20px;
+              margin-bottom: 20px; }
+              #header .wrapper .menu > ul > li.cart .cart-content ul li .name img {
+                margin-right: 5px; }
+              #header .wrapper .menu > ul > li.cart .cart-content ul li .name span {
+                font-size: 14px; }
+              #header .wrapper .menu > ul > li.cart .cart-content ul li .price {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 22px; }
+            #header .wrapper .menu > ul > li.cart .cart-content .total-price {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 20px; }
+              #header .wrapper .menu > ul > li.cart .cart-content .total-price span {
+                font-weight: 400;
+                color: #333333; }
+              #header .wrapper .menu > ul > li.cart .cart-content .total-price b {
+                font-weight: 700;
+                color: #ff3f7c; }
+            #header .wrapper .menu > ul > li.cart .cart-content .btn-checkout {
+              background-image: linear-gradient(to right, #fe5a75, #fd9266);
+              width: 100%;
+              font-weight: 700;
+              color: #ffffff;
+              font-size: 18px; } }
+      #header .wrapper .menu > ul > li a {
         display: inline-block;
         font-size: 16px;
         color: #333333; }
         @media (min-width: 768px) {
-          #header .wrapper .menu ul li a {
+          #header .wrapper .menu > ul > li a {
             width: 150px;
             text-align: center;
             border: 1px solid;
@@ -90,20 +194,20 @@
             border-radius: 25px;
             font-weight: 700;
             font-size: 18px; }
-            #header .wrapper .menu ul li a.register-btn {
+            #header .wrapper .menu > ul > li a.register-btn {
               background-image: linear-gradient(to right, #fe5a75, #fd9266);
               color: #ffffff; }
-            #header .wrapper .menu ul li a.login-btn {
+            #header .wrapper .menu > ul > li a.login-btn {
               border: solid 1px #fe5a75;
               color: #fe5a75; }
-            #header .wrapper .menu ul li a.active-btn {
+            #header .wrapper .menu > ul > li a.active-btn {
               border: solid 1px #1cd1ff;
               color: #1cd1ff; } }
-        #header .wrapper .menu ul li a img {
+        #header .wrapper .menu > ul > li a img {
           width: 20px;
           margin-right: 10px; }
           @media (min-width: 768px) {
-            #header .wrapper .menu ul li a img {
+            #header .wrapper .menu > ul > li a img {
               display: none; } }
   #header .lines {
     left: 0;

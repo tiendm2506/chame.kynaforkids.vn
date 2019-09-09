@@ -4,9 +4,14 @@ ActionJs = {
         ActionJs.scrollFixedMeu();
         ActionJs.clickPlayVideoYoutube();
         ActionJs.moveMainContent();
+        ActionJs.showCart();
 
     },
-
+    showCart : function(){
+        $('#header .wrapper .menu > ul > li.cart').on('click', function(){
+            $('#header .wrapper .menu > ul > li.cart .cart-content').toggleClass('is-showed');
+        })
+    },
     controlMenuMobile : function(){
         $('.control-menu-mb').on('click', function(){
             $('#header').toggleClass('is-show-menu');
