@@ -976,6 +976,13 @@ input[type="radio"]:checked:after {
             color: #ffffff; }
           #homepage #content .category .item:hover .wrapper .ico-moon:before, #homepage #content .category .item:hover .wrapper .path1:before, #homepage #content .category .item:hover .wrapper .path2:before, #homepage #content .category .item:hover .wrapper path3:before {
             color: #ffffff; } }
+    #homepage #content .category .item.active {
+      background-image: linear-gradient(239deg, #6de0fd, #3bbdf9);
+      border-color: #6de0fd; }
+      #homepage #content .category .item.active .wrapper .text {
+        color: #ffffff; }
+      #homepage #content .category .item.active .wrapper .ico-moon:before, #homepage #content .category .item.active .wrapper .path1:before, #homepage #content .category .item.active .wrapper .path2:before, #homepage #content .category .item.active .wrapper path3:before {
+        color: #ffffff; }
     @media (min-width: 992px) {
       #homepage #content .category .item:last-child {
         margin-right: 0; } }
@@ -1539,22 +1546,24 @@ input[type="radio"]:checked:after {
 #shop-details-page #intro .devices .img {
   margin: 15px 0; }
 
-#shop-details-page #intro .description.need-limit {
-  max-height: 500px;
-  overflow: hidden;
-  position: relative; }
-  #shop-details-page #intro .description.need-limit:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 200px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff); }
-
-#shop-details-page #intro .description p {
-  margin-bottom: 10px; }
+#shop-details-page #intro .description {
+  margin-bottom: 40px; }
+  #shop-details-page #intro .description.need-limit {
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0; }
+    #shop-details-page #intro .description.need-limit:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 200px;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff); }
+  #shop-details-page #intro .description p {
+    margin-bottom: 10px; }
 
 #shop-details-page #intro #load-more {
   font-weight: 700;

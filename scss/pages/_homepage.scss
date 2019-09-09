@@ -395,6 +395,20 @@
             }
           }
         }
+        &.active{
+          background-image: linear-gradient(239deg, #6de0fd, #3bbdf9);
+          border-color: #6de0fd;
+          .wrapper{
+            .text{
+              color: #ffffff;
+            }
+            .ico-moon,.path1,.path2,path3{
+              &:before{
+                color: #ffffff;
+              }
+            }
+          }
+        }
         &:last-child{
           @media(min-width: 992px){
             margin-right: 0;

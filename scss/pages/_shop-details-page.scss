@@ -459,10 +459,12 @@
       }
     }
     .description{
+      margin-bottom: 40px;
       &.need-limit{
         max-height: 500px;
         overflow: hidden;
         position: relative;
+        margin-bottom: 0;
         &:after{
           content: '';
           display: block;
