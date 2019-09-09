@@ -668,6 +668,26 @@ input[type="radio"]:checked:after {
   #homepage .pagination-line {
     margin-top: 10px; } }
 
+#homepage .wrapper-flex {
+  display: flex;
+  flex-wrap: wrap; }
+  #homepage .wrapper-flex a {
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; }
+    #homepage .wrapper-flex a.left {
+      background-color: #fd8e67; }
+    #homepage .wrapper-flex a.right {
+      background-color: #ff526f; }
+    #homepage .wrapper-flex a span {
+      margin-left: 10px;
+      position: relative;
+      top: 2px; }
+
 #homepage #banner .slick-arrow {
   display: none !important; }
   @media (min-width: 992px) {

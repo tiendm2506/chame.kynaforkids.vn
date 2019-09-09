@@ -13,6 +13,30 @@
       margin-top: 10px;
     }
   }
+  .wrapper-flex{
+    display: flex;
+    flex-wrap: wrap;
+    a{
+      width: 50%;
+      text-align: center;
+      padding: 10px 0;
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      &.left{
+        background-color: #fd8e67;
+      }
+      &.right{
+        background-color: #ff526f;
+      }
+      span{
+        margin-left: 10px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
   #banner{
     .slick-arrow{
       display: none !important;
