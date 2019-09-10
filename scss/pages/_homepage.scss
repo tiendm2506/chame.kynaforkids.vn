@@ -378,13 +378,13 @@
             background-image: linear-gradient(239deg, #6de0fd, #3bbdf9);
             border-color: #6de0fd;
             .wrapper{
+              .wrapper-icon{
+                img{
+                  margin-top: -45px;
+                }
+              }
               .text{
                 color: #ffffff;
-              }
-              .ico-moon,.path1,.path2,path3{
-                &:before{
-                  color: #ffffff;
-                }
               }
             }
           }
@@ -393,13 +393,15 @@
           background-image: linear-gradient(239deg, #6de0fd, #3bbdf9);
           border-color: #6de0fd;
           .wrapper{
+            .wrapper-icon{
+              img{
+                @media(min-width: 1200px){
+                  margin-top: -45px;
+                }
+              }
+            }
             .text{
               color: #ffffff;
-            }
-            .ico-moon,.path1,.path2,path3{
-              &:before{
-                color: #ffffff;
-              }
             }
           }
         }
@@ -416,23 +418,21 @@
             display: block;
             text-align: center;
           }
-        }
-        .ico-moon{
-          font-size: 20px;
-          margin-right: 10px;
-          @media(min-width: 992px){
-            margin: 0 0 10px 0;
-            font-size: 35px;
-            display: block;
-          }
-          @media(min-width: 1200px){
-            font-size: 45px;
-          }
-          &:before{
-            color: #ffffff;
-            @media(min-width: 1200px){
-              color: #00b2ff;
-              transition: all .3s ease;
+          .wrapper-icon{
+            height: 40px;
+            overflow-y: hidden;
+            margin-right: 10px;
+            display: inline-block;
+            @media(min-width: 992px){
+              margin: 0 0 5px 0;
+            }
+            img{
+              margin-top: -45px;
+              height: 85px;
+              @media(min-width: 1200px){
+                margin-top: 0;
+                transition: all .5s ease;
+              }
             }
           }
         }

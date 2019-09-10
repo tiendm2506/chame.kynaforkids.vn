@@ -985,16 +985,17 @@ input[type="radio"]:checked:after {
         #homepage #content .category .item:hover {
           background-image: linear-gradient(239deg, #6de0fd, #3bbdf9);
           border-color: #6de0fd; }
+          #homepage #content .category .item:hover .wrapper .wrapper-icon img {
+            margin-top: -45px; }
           #homepage #content .category .item:hover .wrapper .text {
-            color: #ffffff; }
-          #homepage #content .category .item:hover .wrapper .ico-moon:before, #homepage #content .category .item:hover .wrapper .path1:before, #homepage #content .category .item:hover .wrapper .path2:before, #homepage #content .category .item:hover .wrapper path3:before {
             color: #ffffff; } }
     #homepage #content .category .item.active {
       background-image: linear-gradient(239deg, #6de0fd, #3bbdf9);
       border-color: #6de0fd; }
+      @media (min-width: 1200px) {
+        #homepage #content .category .item.active .wrapper .wrapper-icon img {
+          margin-top: -45px; } }
       #homepage #content .category .item.active .wrapper .text {
-        color: #ffffff; }
-      #homepage #content .category .item.active .wrapper .ico-moon:before, #homepage #content .category .item.active .wrapper .path1:before, #homepage #content .category .item.active .wrapper .path2:before, #homepage #content .category .item.active .wrapper path3:before {
         color: #ffffff; }
     @media (min-width: 992px) {
       #homepage #content .category .item:last-child {
@@ -1007,23 +1008,21 @@ input[type="radio"]:checked:after {
         #homepage #content .category .item .wrapper {
           display: block;
           text-align: center; } }
-    #homepage #content .category .item .ico-moon {
-      font-size: 20px;
-      margin-right: 10px; }
-      @media (min-width: 992px) {
-        #homepage #content .category .item .ico-moon {
-          margin: 0 0 10px 0;
-          font-size: 35px;
-          display: block; } }
-      @media (min-width: 1200px) {
-        #homepage #content .category .item .ico-moon {
-          font-size: 45px; } }
-      #homepage #content .category .item .ico-moon:before {
-        color: #ffffff; }
-        @media (min-width: 1200px) {
-          #homepage #content .category .item .ico-moon:before {
-            color: #00b2ff;
-            transition: all .3s ease; } }
+      #homepage #content .category .item .wrapper .wrapper-icon {
+        height: 40px;
+        overflow-y: hidden;
+        margin-right: 10px;
+        display: inline-block; }
+        @media (min-width: 992px) {
+          #homepage #content .category .item .wrapper .wrapper-icon {
+            margin: 0 0 5px 0; } }
+        #homepage #content .category .item .wrapper .wrapper-icon img {
+          margin-top: -45px;
+          height: 85px; }
+          @media (min-width: 1200px) {
+            #homepage #content .category .item .wrapper .wrapper-icon img {
+              margin-top: 0;
+              transition: all .5s ease; } }
     #homepage #content .category .item .text {
       font-weight: 700; }
       @media (min-width: 992px) {
