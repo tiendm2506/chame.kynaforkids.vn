@@ -450,7 +450,11 @@ input[type="radio"]:checked:after {
         top: 20px; }
     .course-item .front {
       background-color: #ffffff;
-      height: 100%; }
+      height: 100%; } }
+  @media (min-width: 1200px) and (min-width: 992px) {
+    .course-item .front .info h3 {
+      padding: 0 15px !important; } }
+  @media (min-width: 1200px) {
     .course-item .back {
       background-color: #ffffff;
       height: 100%; }

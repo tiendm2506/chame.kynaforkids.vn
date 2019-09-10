@@ -87,6 +87,13 @@
     .front{
       background-color: #ffffff;
       height: 100%;
+      .info{
+        h3{
+          @media(min-width: 992px){
+            padding: 0 15px !important;
+          }
+        }
+      }
     }
     .back{
       background-color: #ffffff;
