@@ -5,7 +5,16 @@ ActionJs = {
         ActionJs.clickPlayVideoYoutube();
         ActionJs.moveMainContent();
         ActionJs.showCart();
+        ActionJs.flipCart();
 
+    },
+    flipCart : function(){
+        if (window.matchMedia('(min-width: 1200px)').matches){
+            $(".course-item").flip({
+                trigger:'hover',
+                axis:'y'
+            });
+        }
     },
     showCart : function(){
         $('#header .wrapper .menu > ul > li.cart').on('click', function(){
